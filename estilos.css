@@ -56,6 +56,25 @@ input[type=checkbox]:focus {
   background-color: var(--marrom-claro);
 }
 
+#contato select {
+  line-height: 2.8;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--marrom-claro);
+}
+
+[data-bs-theme="dark"] {
+  color: #fff;
+  .nav-link, .card-body, .offcanvas, .accordion, .btn {
+    --bs-nav-link-color: #fff;
+    --bs-card-color: #fff;
+    --bs-offcanvas-color: #fff;
+    --bs-body-color: #fff;
+  }
+}
+
 @media (min-width: 1200px) {
   .banner-2 + section .row {
     width: 1200px;
