@@ -52,6 +52,10 @@ input[type=checkbox]:focus {
   background-color: var(--marrom-escuro);
 }
 
+.input-range::-webkit-slider-thumb {
+  background-color: var(--marrom-claro);
+}
+
 @media (min-width: 1200px) {
   .banner-2 + section .row {
     width: 1200px;

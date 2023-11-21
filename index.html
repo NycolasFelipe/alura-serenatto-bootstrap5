@@ -41,7 +41,7 @@
                 <a class="nav-link" href="#">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="#contato">Contato</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -65,6 +65,7 @@
         <p>Boas-vindas ao Bistrô Serenatto! Um ambiente aconchegante e acolhedor para apreciar um bom café.</p>
       </div>
     </section>
+
     <section class="py-5">
       <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
       <div class="container d-flex justify-content-around flex-wrap">
@@ -104,6 +105,7 @@
         </div>
       </div>
     </section>
+
     <section class="banners banner-2 d-flex flex-column justify-content-center text-center">
       <div class="banners-titulo bg-body-secondary py-5">
         <h2 class="fw-bold">Portas abertas para todos os públicos</h2>
@@ -114,9 +116,7 @@
 
     <section class="py-5">
       <h2 class="fw-bold text-center pb-1">Nossos produtos</h2>
-
       <div class="row">
-
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-bs-toggle="modal"
           data-bs-target="#modal-1">
           <div class="card border-0 btn" style="width: 18rem;">
@@ -126,7 +126,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-bs-toggle="modal"
           data-bs-target="#modal-2">
           <div class="card border-0 btn" style="width: 18rem;">
@@ -136,7 +135,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card border-0 btn" style="width: 18rem;">
             <img src="./assets/produtos-vitaminas.png" class="card-img-top" alt="Smoothies e vitaminas">
@@ -145,7 +143,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card border-0 btn" style="width: 18rem;">
             <img src="./assets/produtos-paes.png" class="card-img-top" alt="Pães e focaccias">
@@ -154,7 +151,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card border-0 btn" style="width: 18rem;">
             <img src="./assets/produtos-doces.png" class="card-img-top" alt="Doces">
@@ -163,7 +159,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card border-0 btn" style="width: 18rem;">
             <img src="./assets/produtos-salgados.png" class="card-img-top" alt="Salgados">
@@ -172,12 +167,46 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </section>
 
     <section class="banners banner-3"></section>
+
+    <section class="py-4 container row mx-auto">
+      <div class="border border-2 rounded p-3 col-xl-10 mx-auto">
+        <h3 class="fw-bold p-3">Entre em contato!</h3>
+        <form id="contato">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+            <label for="floatingNome">Nome</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingEmail" placeholder="nome@exemplo.com">
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating">
+            <input type="number" class="form-control" id="floatingTelefone" placeholder="Telefone">
+            <label for="floatingTelefone">Telefone</label>
+          </div>
+          <select class="form-select my-3" aria-label="Default select example">
+            <option selected>Preferência de contato</option>
+            <option value="1">Whatsapp</option>
+            <option value="2">Email</option>
+            <option value="3">Ligação</option>
+          </select>
+          <label for="nivel-satisfacao" class="form-label">Nível de satisfação:</label>
+          <input type="range" class="form-range input-range" id="nivel-satisfacao">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Deseja receber novidades por email?
+            </label>
+          </div>
+          <button type="button" class="btn botao-padrao w-100 fw-bold mt-3 py-3">Enviar</button>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <!-- Canvas 1 -->
@@ -346,7 +375,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="./assets/produtos-cafe-especial.png" class="w-100" alt="Xícara de café preto">
+          <img src="./assets/produtos-cafe-especial.png" class="w-100" alt="Xícara de café bege">
           <p>Somos conhecidos também por nossos cafés especiais, que são cuidadosamente preparados com grãos
             selecionados de alta qualidade e técnicas de preparo precisas.</p>
           <p>Entre as opções de cafés especiais do Café & Bistrô Serenatto, destacamos o café aeropress, que é preparado
