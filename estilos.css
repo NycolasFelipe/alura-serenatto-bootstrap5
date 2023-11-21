@@ -45,8 +45,17 @@ input[type=checkbox]:focus {
 
 .botao-padrao {
   background-color: var(--marrom-claro);
+  color: #000;
 }
 
 .botao-padrao:hover {
   background-color: var(--marrom-escuro);
 }
+
+@media (min-width: 1200px) {
+  .banner-2 + section .row {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
